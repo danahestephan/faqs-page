@@ -1,0 +1,74 @@
+/* ||||||||||||||||||||| Add @import rule here |||||||||||||||||||| */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Open+Sans&family=PT+Serif&display=swap');
+
+/* ||||||||||||||||||||| Add CSS code under this line |||||||||||||||||||| */
+html,
+body {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-family: 'PT Serif', serif;
+  background-color: black;
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  min-width: none;
+  min-height: 50px;
+  margin: auto;
+}
+.container img{
+  display: block;
+  margin: auto;
+  width: 100px;
+}
+.container .stack{
+  position: relative;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 1rem;
+  background-color: grey;
+  box-shadow: 10px 20px rgb(green,);
+}
+.stack label{
+  display: flex;
+  align-items: center;
+}
+.stack label h2{
+  background: white;
+  color: black;
+  border-radius: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stack label::after{
+  content: "+";
+  position: absolute;
+  padding: 10px;
+  font-size: 2rem;
+  right: 100px;
+}
+.stack :hover label::after{
+  color: black;
+  transition: 1s;
+
+}
+.stack input:checked ~label::after{
+  transform: rotate(45deg);
+}
+.content{
+  overflow: hidden ;
+  max-height: 0;
+  transition: 0.2s;
+}
+.stack input:checked ~ .content{
+ max-height: 100vh;
+}
+.content p {
+padding: 10px;
+}
+

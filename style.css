@@ -59,6 +59,7 @@ body {
 }
 .stack input:checked ~label::after{
   transform: rotate(45deg);
+  color: black;
 }
 .content{
   overflow: hidden ;

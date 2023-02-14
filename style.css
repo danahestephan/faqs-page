@@ -31,15 +31,18 @@ body {
   margin: 5px;
   border-radius: 1rem;
   background-color: grey;
-  box-shadow: 10px 20px rgb(green,);
+  box-shadow: 2px 2px 12px 0 rgb(122, 210, 64);
 }
 .stack label{
   display: flex;
   align-items: center;
+  
+
 }
 .stack label h2{
   background: white;
   color: black;
+
   border-radius: 0.2rem;
   display: flex;
   justify-content: center;
@@ -53,9 +56,8 @@ body {
   right: 100px;
 }
 .stack :hover label::after{
+  transition: 0.5s;
   color: black;
-  transition: 1s;
-
 }
 .stack input:checked ~label::after{
   transform: rotate(45deg);
@@ -72,4 +74,3 @@ body {
 .content p {
 padding: 10px;
 }
-
